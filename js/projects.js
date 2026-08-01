@@ -39,6 +39,15 @@ const projects = [
     links: [
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Senai-GPT-Angular" }
     ]
+  },
+  {
+    title: "Finanças",
+    subtitle: "Controle de Finanças Pessoais",
+    text: "App em React para organizar renda, metas de economia e dívidas, com painel de gráficos e cálculo automático de parcelas e recebimentos mês a mês.",
+    image: "img/financas.png",
+    links: [
+      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Financas" }
+    ]
   }
 ];
 
