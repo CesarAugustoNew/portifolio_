@@ -48,6 +48,15 @@ const projects = [
     links: [
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Financas" }
     ]
+  },
+  {
+    title: "Barras & Lotes",
+    subtitle: "Projeto para gerenciamento de produção",
+    text: "App para o setor de pintura registrar lançamentos de produção, ordens de produção, sobras, catálogo de peças com embalagem e paradas de produção, tudo em uma única página.",
+    image: "img/pintura-po.png",
+    links: [
+      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Pintura-Po" }
+    ]
   }
 ];
 
