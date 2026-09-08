@@ -117,16 +117,6 @@
   background-color: #7EC8E3;
 }
 
-/* Destaque extra pro link do projeto no ar (a ação principal do card),
-   diferenciando visualmente do link do GitHub */
-.project-card-back a.project-link.project-link--live {
-  background-color: #28a745;
-}
-
-.project-card-back a.project-link.project-link--live:hover {
-  background-color: #34ce57;
-}
-
 .missing-note {
   font-size: 0.75rem;
   color: #dc3545;

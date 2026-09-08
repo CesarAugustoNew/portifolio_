@@ -28,7 +28,6 @@ const projects = [
     text: "Aplicação de gerenciamento de notas.",
     image: "img/notes.png",
     links: [
-      { label: "Acessar projeto", url: "https://projeto-senai-notes-angular.vercel.app/" },
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Senai-Notes-Angular" }
     ]
   },
@@ -38,7 +37,6 @@ const projects = [
     text: "Projeto de simulação do ChatGPT.",
     image: "img/gpt.png",
     links: [
-      { label: "Acessar projeto", url: "https://projeto-senai-gpt-angular.vercel.app/login" },
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Senai-GPT-Angular" }
     ]
   },
@@ -57,7 +55,6 @@ const projects = [
     text: "App para o setor de pintura registrar lançamentos de produção, ordens de produção, sobras, catálogo de peças com embalagem e paradas de produção, tudo em uma única página.",
     image: "img/pintura-po.png",
     links: [
-      { label: "Acessar projeto", url: "https://pintura-po.vercel.app/" },
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Pintura-Po" }
     ]
   }
@@ -116,9 +113,6 @@ function renderProjects() {
       project.links.forEach((linkInfo) => {
         const link = document.createElement("a");
         link.className = "project-link";
-        if (linkInfo.label === "Acessar projeto") {
-          link.classList.add("project-link--live");
-        }
         link.href = linkInfo.url;
         link.target = "_blank";
         link.rel = "noopener noreferrer";
