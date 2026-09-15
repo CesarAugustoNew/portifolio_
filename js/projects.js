@@ -3,16 +3,6 @@
 // links: array of { label, url } — use as many as you need (front-end, API, demo, etc.)
 const projects = [
   {
-    title: "PitStop",
-    subtitle: "Gerenciamento de Lava-Rápido",
-    text: "Projeto full stack para gerenciamento de um lava-rápido.",
-    image: "img/pitstop.png",
-    links: [
-      { label: "Front-end", url: "https://github.com/CesarAugustoNew/Projeto-PitStop" },
-      { label: "API (Spring Boot)", url: "https://github.com/CesarAugustoNew/SpringBootAPI-PitStop" }
-    ]
-  },
-  {
     title: "Cinema",
     subtitle: "Gerenciamento de Cinema",
     text: "Projeto full stack para gerenciamento de um cinema.",
