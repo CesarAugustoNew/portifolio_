@@ -8,6 +8,7 @@ const projects = [
     text: "Projeto full stack para gerenciamento de um cinema.",
     image: "img/cinema.png",
     links: [
+      { label: "Acessar projeto", url: "https://projeto-senai-cinema.vercel.app/" },
       { label: "Front-end", url: "https://github.com/CesarAugustoNew/Projeto-Senai-Cinema" },
       { label: "API (Spring Boot)", url: "https://github.com/CesarAugustoNew/SpringBootAPI-Cinema" }
     ]
