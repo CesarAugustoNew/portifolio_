@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Senai Notes",
     subtitle: "Angular + TypeScript (front-end) • Java + Spring Boot (API) • PostgreSQL • JWT",
-    text: "Aplicativo de anotações pessoais, também dividido em front-end e API. Cada usuário cria sua própria conta e organiza notas com título, descrição, imagem e etiquetas, podendo editar, arquivar, buscar e excluir suas anotações, sem acesso às notas de outras contas. Front-end em Angular, consumindo a API por meio de uma variável de ambiente configurável, com autenticação JWT persistida após o login. Aplicação publicada em produção, com o front-end na Vercel e a API e o banco de dados no Render.",
+    text: "Aplicativo de anotações pessoais",
     image: "img/notes.png",
     links: [
       { label: "Acessar projeto", url: "https://projeto-senai-notes-angular.vercel.app/" },
