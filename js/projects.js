@@ -43,6 +43,16 @@ const projects = [
       { label: "Acessar projeto", url: "https://pintura-po.vercel.app/" },
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Pintura-Po" }
     ]
+  },
+  {
+    title: "Finanças",
+    subtitle: "React + Vite • Tailwind CSS • Recharts",
+    text: "Controle financeiro pessoal em React: painel mensal, renda, gastos fixos e parcelados, metas de economia e análise técnica do saldo com previsão.",
+    image: "img/financas.png",
+    links: [
+      { label: "Acessar projeto", url: "https://projeto-financas-alpha.vercel.app/" },
+      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Financas" }
+    ]
   }
 ];
 
@@ -65,8 +75,20 @@ function renderProjects() {
     front.className = "project-card-front";
     if (project.image) {
       const img = document.createElement("img");
-      img.src = project.image;
+      // Miniaturas pré-redimensionadas (img/thumbs) ficam nítidas; o navegador escolhe o tamanho certo.
+      // Se a miniatura não existir, usa a imagem original.
+      const base = project.image.replace(/^img\//, "").replace(/\.\w+$/, "");
+      img.src = `img/thumbs/${base}-1100.webp`;
+      img.srcset = `img/thumbs/${base}-700.webp 700w, img/thumbs/${base}-1100.webp 1100w`;
+      img.sizes = "(max-width: 700px) 100vw, (max-width: 1200px) 50vw, 25vw";
+      img.loading = "lazy";
+      img.decoding = "async";
       img.alt = project.title;
+      img.onerror = () => {
+        img.onerror = null;
+        img.removeAttribute("srcset");
+        img.src = project.image;
+      };
       front.appendChild(img);
     } else {
       const placeholder = document.createElement("div");
