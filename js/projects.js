@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Cinema",
     subtitle: "Gerenciamento de Cinema",
-    text: "Projeto full stack para gerenciamento de um cinema.",
+    text: "Sistema full stack para gerenciamento de um cinema: cadastro de filmes, salas e sessões, reserva de assentos e painel administrativo com relatório de receita.",
     image: "img/cinema.png",
     links: [
       { label: "Acessar projeto", url: "https://projeto-senai-cinema.vercel.app/" },
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Senai Notes",
     subtitle: "Angular + TypeScript (front-end) • Java + Spring Boot (API) • PostgreSQL • JWT",
-    text: "Aplicativo de anotações pessoais",
+    text: "Aplicativo de anotações pessoais com front-end em Angular e API em Spring Boot. Permite criar, editar, arquivar e organizar notas por etiquetas, com autenticação via JWT.",
     image: "img/notes.png",
     links: [
       { label: "Acessar projeto", url: "https://projeto-senai-notes-angular.vercel.app/" },
@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Barras & Lotes",
     subtitle: "Projeto para gerenciamento de produção",
-    text: "App para o setor de pintura registrar lançamentos de produção, ordens de produção, sobras, catálogo de peças com embalagem e paradas de produção, tudo em uma única página.",
+    text: "App para o setor de Pintura do Grupo Delga registrar lançamentos de produção, ordens, paradas e sobras, e gerenciar o catálogo de peças, com perfis de administrador e operador.",
     image: "img/pintura-po.png",
     links: [
       { label: "Acessar projeto", url: "https://pintura-po.vercel.app/" },
@@ -95,6 +95,7 @@ function renderProjects() {
     back.appendChild(text);
 
     const linksWrap = document.createElement("div");
+    linksWrap.className = "project-links-wrap";
     if (project.links && project.links.length > 0) {
       project.links.forEach((linkInfo) => {
         const link = document.createElement("a");
