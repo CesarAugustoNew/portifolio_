@@ -3,14 +3,13 @@
 // links: array of { label, url } — use as many as you need (front-end, API, demo, etc.)
 const projects = [
   {
-    title: "Cinema",
-    subtitle: "Gerenciamento de Cinema",
-    text: "Sistema full stack para gerenciamento de um cinema: cadastro de filmes, salas e sessões, reserva de assentos e painel administrativo com relatório de receita.",
-    image: "img/cinema.png",
+    title: "Barras & Lotes",
+    subtitle: "Projeto para gerenciamento de produção",
+    text: "App para o setor de Pintura do Grupo Delga registrar lançamentos de produção, ordens, paradas e sobras, e gerenciar o catálogo de peças, com perfis de administrador e operador.",
+    image: "img/pintura-po.png",
     links: [
-      { label: "Acessar projeto", url: "https://projeto-senai-cinema.vercel.app/" },
-      { label: "Front-end", url: "https://github.com/CesarAugustoNew/Projeto-Senai-Cinema" },
-      { label: "API (Spring Boot)", url: "https://github.com/CesarAugustoNew/SpringBootAPI-Cinema" }
+      { label: "Acessar projeto", url: "https://pintura-po.vercel.app/" },
+      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Pintura-Po" }
     ]
   },
   {
@@ -25,6 +24,26 @@ const projects = [
     ]
   },
   {
+    title: "Cinema",
+    subtitle: "Gerenciamento de Cinema",
+    text: "Sistema full stack para gerenciamento de um cinema: cadastro de filmes, salas e sessões, reserva de assentos e painel administrativo com relatório de receita.",
+    image: "img/cinema.png",
+    links: [
+      { label: "Acessar projeto", url: "https://projeto-senai-cinema.vercel.app/" },
+      { label: "Front-end", url: "https://github.com/CesarAugustoNew/Projeto-Senai-Cinema" },
+      { label: "API (Spring Boot)", url: "https://github.com/CesarAugustoNew/SpringBootAPI-Cinema" }
+    ]
+  },
+  {
+    title: "Livraria Otium",
+    subtitle: "Loja virtual de livros",
+    text: "E-commerce de livraria com catálogo por categorias, busca de livros, lista de favoritos, carrinho com cupom de desconto e login de usuário.",
+    image: "img/livraria.png",
+    links: [
+      { label: "Acessar projeto", url: "https://livraria-otium.vercel.app/" }
+    ]
+  },
+  {
     title: "GPT",
     subtitle: "Simulação de Chat",
     text: "Projeto de simulação do ChatGPT.",
@@ -32,16 +51,6 @@ const projects = [
     links: [
       { label: "Acessar projeto", url: "https://projeto-senai-gpt-angular.vercel.app/login" },
       { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Projeto-Senai-GPT-Angular" }
-    ]
-  },
-  {
-    title: "Barras & Lotes",
-    subtitle: "Projeto para gerenciamento de produção",
-    text: "App para o setor de Pintura do Grupo Delga registrar lançamentos de produção, ordens, paradas e sobras, e gerenciar o catálogo de peças, com perfis de administrador e operador.",
-    image: "img/pintura-po.png",
-    links: [
-      { label: "Acessar projeto", url: "https://pintura-po.vercel.app/" },
-      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Pintura-Po" }
     ]
   },
   {
