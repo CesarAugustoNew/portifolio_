@@ -40,7 +40,8 @@ const projects = [
     text: "E-commerce de livraria com catálogo por categorias, busca de livros, lista de favoritos, carrinho com cupom de desconto e login de usuário.",
     image: "img/livraria.png",
     links: [
-      { label: "Acessar projeto", url: "https://livraria-otium.vercel.app/" }
+      { label: "Acessar projeto", url: "https://livraria-otium.vercel.app/" },
+      { label: "Ver no GitHub", url: "https://github.com/CesarAugustoNew/Livraria-Otium" }
     ]
   },
   {
