@@ -1,6 +1,6 @@
 // Certificate data — edit this array to add/update certificates.
 // file: name (without extension) shared by certificados/<file>.pdf and img/certificados/<file>-400|800.webp
-// completed: completion date (YYYY-MM-DD) — the grid is sorted by it, oldest first
+// completed: completion date (YYYY-MM-DD) — the grid is sorted by it, newest first
 // inProgress: true for ongoing courses — completed is then the expected end date
 const certificates = [
   { title: "Algoritmos e Lógica de Programação", issuer: "Udemy", completed: "2024-11-13", hours: 30.5, file: "algoritmos-logica-programacao" },
@@ -31,7 +31,7 @@ function renderCertificates() {
   grid.className = "certificates-grid";
 
   [...certificates]
-    .sort((a, b) => a.completed.localeCompare(b.completed))
+    .sort((a, b) => b.completed.localeCompare(a.completed))
     .forEach((cert) => {
       // The whole card is a link that opens the PDF in a new tab
       const card = document.createElement("a");
